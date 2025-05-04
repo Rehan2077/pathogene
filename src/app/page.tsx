@@ -47,6 +47,7 @@ export default function HomePage() {
                   height={250}
                   alt="DNA Helix Visualization"
                   className="hidden rounded-lg object-cover md:block"
+                  placeholder="blur"
                 />
               </div>
             </div>
