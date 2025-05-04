@@ -16,8 +16,8 @@ export default function HomePage() {
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-28">
           <div className="px-4 md:px-6">
-            <div className="flex flex-row items-center gap-6">
-              <div className="flex w-full flex-col justify-center space-y-4 md:w-[65%]">
+            <div className="flex flex-row items-center">
+              <div className="flex w-full flex-col justify-center space-y-4 md:w-[72%]">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none">
                     <span className="relative mb-3 inline-block">
@@ -42,12 +42,11 @@ export default function HomePage() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/image.png"
-                  width={250}
-                  height={250}
+                  src="/image.webp"
+                  width={200}
+                  height={200}
                   alt="DNA Helix Visualization"
                   className="hidden rounded-lg object-cover md:block"
-                  placeholder="blur"
                 />
               </div>
             </div>
