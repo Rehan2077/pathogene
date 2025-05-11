@@ -299,13 +299,11 @@ export async function analyzeVariantWithAPI({
   alternative,
   genomeId,
   chromosome,
-  clinVarPrediction,
 }: {
   position: number;
   alternative: string;
   genomeId: string;
   chromosome: string;
-  clinVarPrediction?: string;
 }): Promise<AnalysisResult> {
   const queryParams = new URLSearchParams({
     variant_position: position.toString(),
@@ -318,21 +316,11 @@ export async function analyzeVariantWithAPI({
 
   const response = await fetch(url, { method: "POST" });
 
-  let result = await response.json();
-
+  
   if (!response.ok) {
     const errorText = await response.text();
     throw new Error("Failed to analyze variant " + errorText);
   }
-
-  if (
-    clinVarPrediction?.includes("patho") &&
-    (result.prediction as string).includes("benign")
-  ) {
-    result.prediction = "Likely Pathogenic";
-    result.classification_confidence = 0.7;
-    result.delta_score = -0.09;
-  }
-
-  return result;
+  
+  return await response.json();
 }
