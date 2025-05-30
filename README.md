@@ -1,29 +1,66 @@
-# Create T3 App
+# PathoGene
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+**Live Demo**: [http://pathogene.vercel.app/](http://pathogene.vercel.app/)
 
-## What's next? How do I make an app with this?
+PathoGene is a powerful, AI-powered web-based platform designed to interpret genetic mutations in DNA. It analyzes DNA variants and predicts their potential to cause disease with high confidence. Built for accessibility and speed, PathoGene delivers real-time variant analysis through a user-friendly interface.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+---
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## ✨ Features
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- 🔍 AI-powered DNA mutation analysis (Evo2 Model)
+- ⚡ Real-time prediction and classification
+- 📊 Visual representation of sequence data
+- 📁 Report Import: Upload variant files for instant analysis
+- 📤 Report Export: Download results as PDF or DOCX
+- 🔒 Designed for ease-of-use, no bioinformatics background required
 
-## Learn More
+---
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## 🛠 Tech Stack
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### Frontend
+- NextJS
+- Tailwind CSS
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+### Backend
+- FastAPI
+- Modal
+- Evo2 Model
 
-## How do I deploy this?
+### Others
+- Matplotlib
+- Pandas
+- Seaborn
+- Scikit-learn
+- Openpyxl
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+---
+
+## 📌 Use Cases
+
+- Identify potential breast cancer-causing BRCA1 mutations
+- Help researchers analyze DNA variants quickly
+- Support clinicians in prioritizing pathogenic variants
+- Enable students and biologists to understand complex mutations
+- Prepare for future synthetic biology applications and lab-grown genomics
+
+---
+
+
+## 👥 Team Roles
+
+- **Aditi**: Frontend  
+- **Rehan**: Backend  
+
+---
+
+## 🧬 Future Scope
+
+- Add secure user authentication and profile history
+- Convert into a SaaS platform with API access
+- Support more organisms beyond human BRCA1
+- Expand to include insertions and deletions (INDELs)
+- Integrate clinical annotations (dbSNP, gnomAD, UniProt)
+- Enable graphical 3D structure visualizations
+- Improve Evo2’s accuracy with larger datasets
