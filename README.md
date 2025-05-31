@@ -11,8 +11,6 @@ PathoGene is a powerful, AI-powered web-based platform designed to interpret gen
 - 🔍 AI-powered DNA mutation analysis (Evo2 Model)
 - ⚡ Real-time prediction and classification
 - 📊 Visual representation of sequence data
-- 📁 Report Import: Upload variant files for instant analysis
-- 📤 Report Export: Download results as PDF or DOCX
 - 🔒 Designed for ease-of-use, no bioinformatics background required
 
 ---
